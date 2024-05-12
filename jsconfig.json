@@ -8,7 +8,8 @@
      * a value or a type, so tell TypeScript to enforce using
      * `import type` instead of `import` for Types.
      */
-    "importsNotUsedAsValues": "error",
+    // "importsNotUsedAsValues": "error",
+    // error : importsNotUsedAsValues has been removed
     "isolatedModules": true,
     "resolveJsonModule": true,
     /**
@@ -24,7 +25,16 @@
      * Typecheck JS in `.svelte` and `.js` files by default.
      * Disable this if you'd like to use dynamic types.
      */
-    "checkJs": true
+    "checkJs": true,
+    // ⚠️ NEEDED FOR VSCODE PATH INTELLISENSE
+    "paths": {
+      "$lib/*": [
+        "./src/lib/*"
+      ],
+      "$slides/*": [
+        "./src/slides/*"
+      ]
+    }
   },
   /**
    * Use global.d.ts instead of compilerOptions.types

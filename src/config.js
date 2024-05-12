@@ -16,9 +16,9 @@ export default {
     },
     // Reveal Config
     reveal: {
-        plugins: [Highlight, Markdown, MathReveal.MathJax2, MathReveal.KaTeX, RevealNotes],
+        plugins: [Highlight, Markdown, MathReveal.MathJax3, MathReveal.KaTeX, RevealNotes],
         hash: true,
-      mathjax2: {
+      mathjax3: {
         config: 'TeX-AMS_HTML-full',
         TeX: {
           Macros: {
